@@ -15,4 +15,4 @@ Requirements:
   - Website URL
 - The user must be able to make multiple searches and see only the results for the current search.
 
-- I've also added each park's addresses to the results.
+I've also added each park's addresses to the results.
