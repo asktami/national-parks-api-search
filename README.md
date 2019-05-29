@@ -1,6 +1,6 @@
 # national-parks-api-search
 
-[View Live](https://asktami.github.io/national-parks-api-search/ target="_blank")
+[View Live](https://asktami.github.io/national-parks-api-search/)
 
 
 One feature for an app that will help folks plan a vacation - display a list of national parks in an area.
