@@ -79,7 +79,8 @@ function watchForm() {
   $('form').submit(event => {
     event.preventDefault();
     $('#results-list').empty();
-     $('#results-list').html('<div id="loader"><img src="loader.gif" alt="loading..."></div>');
+    $('#results-list').html('<div id="loader"><img src="loader.gif" alt="loading..."></div>');
+  $('#results').removeClass('hidden');
      
     const searchTerm = $('#js-search-term').val();
     const limit = $('#js-max-results').val();
@@ -99,7 +100,7 @@ $(function() {
      // clear results list
   	 $('#results-list').empty();
   	 
-	//jide the results section  
+	//hide the results section  
 	$('#results').addClass('hidden');
   	 
   	 // empty select2 dropdown
