@@ -78,7 +78,7 @@ function getParks(searchTerm, limit=10) {
 function watchForm() {
   $('form').submit(event => {
     event.preventDefault();
-    
+    $('#results-list').empty();
      $('#results-list').html('<div id="loader"><img src="loader.gif" alt="loading..."></div>');
      
     const searchTerm = $('#js-search-term').val();
