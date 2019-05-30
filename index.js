@@ -78,9 +78,14 @@ function getParks(searchTerm, limit=10) {
 function watchForm() {
   $('form').submit(event => {
     event.preventDefault();
+    
+     $('#results-list').html('<div id="loader"><img src="loader.gif" alt="loading..."></div>');
+     
     const searchTerm = $('#js-search-term').val();
     const limit = $('#js-max-results').val();
-    console.log('limit = ' + limit);
+    
+    // console.log('limit = ' + limit);
+    
     getParks(searchTerm, limit);
   });
 }
