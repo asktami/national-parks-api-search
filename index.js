@@ -54,7 +54,7 @@ function getParks(searchTerm, limit=10) {
   const params = {
     api_key: apiKey,
     stateCode: searchTerm,
-    limit: limit-1,  /* WHY do I have to do this? Other question = why get forbidden with GitHub API search and how to fix */
+    limit: limit-1, 
     fields: fields
   };
   const queryString = formatQueryParams(params)
@@ -80,6 +80,7 @@ function watchForm() {
     event.preventDefault();
     const searchTerm = $('#js-search-term').val();
     const limit = $('#js-max-results').val();
+    console.log('limit = ' + limit);
     getParks(searchTerm, limit);
   });
 }
