@@ -54,7 +54,7 @@ function getParks(searchTerm, limit=10) {
   const params = {
     api_key: apiKey,
     stateCode: searchTerm,
-    limit: limit-1, 
+    limit: limit-1, /* without -1 returns 1 too many results */
     fields: fields
   };
   const queryString = formatQueryParams(params)
